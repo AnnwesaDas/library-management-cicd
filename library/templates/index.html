@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1>Dashboard</h1>
+<div class="stats">
+  <div><span>{{ book_count }}</span>Books</div>
+  <div><span>{{ member_count }}</span>Members</div>
+  <div><span>{{ issued|length }}</span>Issued</div>
+</div>
+
+<h2>Currently issued</h2>
+{% if issued %}
+<table>
+  <tr><th>Book</th><th>Author</th><th>Issued to</th><th>Issued on</th></tr>
+  {% for book in issued %}
+  <tr>
+    <td>{{ book.title }}</td>
+    <td>{{ book.author }}</td>
+    <td>{{ book.member.name }}</td>
+    <td>{{ book.issued_at.strftime('%d %b %Y') }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% else %}
+<p>No books are issued right now.</p>
+{% endif %}
+{% endblock %}

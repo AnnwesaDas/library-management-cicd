@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: #1f2933;
+  background: #f5f7fa;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #1f4e79;
+  color: #fff;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 16px;
+  text-decoration: none;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #d9e2ec;
+  text-align: left;
+}
+
+form.inline {
+  margin-bottom: 12px;
+}
+
+input, select, button {
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button.danger {
+  color: #b42318;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+}
+
+.stats div {
+  flex: 1;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #d9e2ec;
+}
+
+.stats span {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.flash {
+  padding: 8px 12px;
+  background: #e3f8e8;
+  border-left: 4px solid #2f9e44;
+}
+
+.flash.error {
+  background: #fde8e8;
+  border-left-color: #b42318;
+}

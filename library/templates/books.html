@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Books{% endblock %}
+{% block content %}
+<h1>Books</h1>
+
+<form method="get" class="inline">
+  <input name="q" value="{{ q }}" placeholder="Search by title or author" aria-label="Search">
+  <button>Search</button>
+  {% if q %}<a href="{{ url_for('main.books') }}">Clear</a>{% endif %}
+</form>
+
+<form method="post" class="inline">
+  <input name="title" placeholder="Title" aria-label="Title" required>
+  <input name="author" placeholder="Author" aria-label="Author" required>
+  <button>Add book</button>
+</form>
+
+<table>
+  <tr><th>Title</th><th>Author</th><th>Status</th><th>Actions</th></tr>
+  {% for book in books %}
+  <tr>
+    <td>{{ book.title }}</td>
+    <td>{{ book.author }}</td>
+    <td>
+      {% if book.is_available %}Available{% else %}Issued to {{ book.member.name }}{% endif %}
+    </td>
+    <td class="actions">
+      {% if book.is_available %}
+      <form method="post" action="{{ url_for('main.issue_book', book_id=book.id) }}">
+        <select name="member_id" aria-label="Member" required>
+          <option value="">Choose member</option>
+          {% for member in members %}
+          <option value="{{ member.id }}">{{ member.name }}</option>
+          {% endfor %}
+        </select>
+        <button>Issue</button>
+      </form>
+      {% else %}
+      <form method="post" action="{{ url_for('main.return_book', book_id=book.id) }}">
+        <button>Return</button>
+      </form>
+      {% endif %}
+      <form method="post" action="{{ url_for('main.delete_book', book_id=book.id) }}">
+        <button class="danger">Delete</button>
+      </form>
+    </td>
+  </tr>
+  {% else %}
+  <tr><td colspan="4">No books found.</td></tr>
+  {% endfor %}
+</table>
+{% endblock %}

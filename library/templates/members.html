@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Members{% endblock %}
+{% block content %}
+<h1>Members</h1>
+
+<form method="post" class="inline">
+  <input name="name" placeholder="Name" aria-label="Name" required>
+  <input name="email" type="email" placeholder="Email" aria-label="Email" required>
+  <button>Add member</button>
+</form>
+
+<table>
+  <tr><th>Name</th><th>Email</th><th>Books issued</th></tr>
+  {% for member in members %}
+  <tr>
+    <td>{{ member.name }}</td>
+    <td>{{ member.email }}</td>
+    <td>{{ member.books|length }}</td>
+  </tr>
+  {% else %}
+  <tr><td colspan="3">No members yet.</td></tr>
+  {% endfor %}
+</table>
+{% endblock %}
