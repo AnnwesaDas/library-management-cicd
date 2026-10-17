@@ -37,7 +37,11 @@ jobs:
 
       - name: Build the Docker image
         # The source label links the published image to this repository on GitHub.
-        run: docker build --label "org.opencontainers.image.source=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" -t library-app .
+        run: |
+          docker build \
+            --label "org.opencontainers.image.source=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" \
+            --build-arg "APP_VERSION=$GITHUB_SHA" \
+            -t library-app .
 
       - name: Save the image to a file
         run: docker save library-app -o image.tar
@@ -125,3 +129,20 @@ jobs:
           docker tag library-app "$IMAGE:$GITHUB_SHA"
           docker push "$IMAGE:latest"
           docker push "$IMAGE:$GITHUB_SHA"
+
+  deploy:
+    name: Deploy
+    needs: publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy the new image to Render
+        env:
+          DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$DEPLOY_HOOK" ]; then
+            echo "::notice::RENDER_DEPLOY_HOOK_URL secret is not set, so there is nothing to deploy to."
+            exit 0
+          fi
+          # Deploy the exact image this run tested and published, by its commit SHA tag.
+          IMAGE="ghcr.io/${GITHUB_REPOSITORY,,}:$GITHUB_SHA"
+          curl -fsS -X POST "$DEPLOY_HOOK&imgURL=$(jq -rn --arg v "$IMAGE" '$v|@uri')"

@@ -1,0 +1,28 @@
+# Render Blueprint: describes the hosting setup as code.
+# Render reads this file and creates the web service and the database from it.
+services:
+  - type: web
+    name: library-management
+    runtime: image
+    image:
+      url: ghcr.io/annwesadas/library-management-cicd:latest
+    plan: free
+    region: singapore
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: "8000"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: library-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+
+databases:
+  - name: library-db
+    plan: free
+    region: singapore
+    databaseName: library
+    user: library
+    postgresMajorVersion: "16"

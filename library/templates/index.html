@@ -1,27 +1,58 @@
 {% extends "base.html" %}
-{% block title %}Home{% endblock %}
+{% block title %}Dashboard{% endblock %}
 {% block content %}
-<h1>Dashboard</h1>
-<div class="stats">
-  <div><span>{{ book_count }}</span>Books</div>
-  <div><span>{{ member_count }}</span>Members</div>
-  <div><span>{{ issued|length }}</span>Issued</div>
+<div class="page-head">
+  <div>
+    <h1>Dashboard</h1>
+    <p class="muted">What is on the shelves and who has what.</p>
+  </div>
 </div>
 
-<h2>Currently issued</h2>
-{% if issued %}
-<table>
-  <tr><th>Book</th><th>Author</th><th>Issued to</th><th>Issued on</th></tr>
-  {% for book in issued %}
-  <tr>
-    <td>{{ book.title }}</td>
-    <td>{{ book.author }}</td>
-    <td>{{ book.member.name }}</td>
-    <td>{{ book.issued_at.strftime('%d %b %Y') }}</td>
-  </tr>
-  {% endfor %}
-</table>
-{% else %}
-<p>No books are issued right now.</p>
-{% endif %}
+<div class="stats">
+  <a class="stat" href="{{ url_for('main.books') }}"><span class="stat-value">{{ book_count }}</span><span class="stat-label">Books</span></a>
+  <a class="stat" href="{{ url_for('main.books', status='available') }}"><span class="stat-value">{{ available_count }}</span><span class="stat-label">Available</span></a>
+  <a class="stat" href="{{ url_for('main.books', status='issued') }}"><span class="stat-value">{{ issued|length }}</span><span class="stat-label">Issued</span></a>
+  <a class="stat {% if overdue_count %}stat-alert{% endif %}" href="{{ url_for('main.books', status='overdue') }}"><span class="stat-value">{{ overdue_count }}</span><span class="stat-label">Overdue</span></a>
+  <a class="stat" href="{{ url_for('main.members') }}"><span class="stat-value">{{ member_count }}</span><span class="stat-label">Members</span></a>
+</div>
+
+<div class="columns">
+  <section class="panel">
+    <h2>Books by genre</h2>
+    <ul class="bars">
+      {% for genre, count in genres %}
+      <li>
+        <a href="{{ url_for('main.books', genre=genre) }}">
+          <span class="bar-label">{{ genre }}</span>
+          <span class="bar-track"><span class="bar" style="width: {{ (count / max_genre * 100)|round(1) }}%"></span></span>
+          <span class="bar-value">{{ count }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <h2>On loan</h2>
+      <a href="{{ url_for('main.books', status='issued') }}">View all</a>
+    </div>
+    {% if issued %}
+    <table>
+      <thead><tr><th>Book</th><th>Member</th><th>Status</th></tr></thead>
+      <tbody>
+        {% for book in issued[:10] %}
+        <tr>
+          <td><strong>{{ book.title }}</strong><br><span class="muted small">{{ book.author }}</span></td>
+          <td>{{ book.member.name }}</td>
+          <td>{% include "_due_badge.html" %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <p class="muted">No books are on loan right now.</p>
+    {% endif %}
+  </section>
+</div>
 {% endblock %}

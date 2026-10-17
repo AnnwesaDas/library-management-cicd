@@ -1,24 +1,39 @@
 {% extends "base.html" %}
 {% block title %}Members{% endblock %}
 {% block content %}
-<h1>Members</h1>
+<div class="page-head">
+  <div>
+    <h1>Members</h1>
+    <p class="muted">{{ members|length }} registered member{{ '' if members|length == 1 else 's' }}</p>
+  </div>
+</div>
 
-<form method="post" class="inline">
-  <input name="name" placeholder="Name" aria-label="Name" required>
-  <input name="email" type="email" placeholder="Email" aria-label="Email" required>
-  <button>Add member</button>
-</form>
+<details class="panel add-form">
+  <summary>Add a member</summary>
+  <form method="post" action="{{ url_for('main.add_member') }}" class="form-grid">
+    <label>Name<input name="name" required></label>
+    <label>Email<input name="email" type="email" required></label>
+    <button class="btn btn-primary">Add member</button>
+  </form>
+</details>
 
-<table>
-  <tr><th>Name</th><th>Email</th><th>Books issued</th></tr>
-  {% for member in members %}
-  <tr>
-    <td>{{ member.name }}</td>
-    <td>{{ member.email }}</td>
-    <td>{{ member.books|length }}</td>
-  </tr>
+<section class="panel">
+  {% if members %}
+  <table>
+    <thead><tr><th>Member</th><th>Email</th><th>On loan</th><th>Overdue</th></tr></thead>
+    <tbody>
+      {% for member in members %}
+      <tr>
+        <td><span class="avatar" aria-hidden="true">{{ member.name[:1] }}</span> {{ member.name }}</td>
+        <td class="muted">{{ member.email }}</td>
+        <td>{{ member.books|length }}</td>
+        <td>{% if member.overdue_count %}<span class="badge badge-danger">{{ member.overdue_count }}</span>{% else %}<span class="muted">0</span>{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
   {% else %}
-  <tr><td colspan="3">No members yet.</td></tr>
-  {% endfor %}
-</table>
+  <p class="muted">No members yet.</p>
+  {% endif %}
+</section>
 {% endblock %}

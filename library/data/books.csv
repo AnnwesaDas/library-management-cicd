@@ -1,0 +1,257 @@
+title,author,genre,year
+Pride and Prejudice,Jane Austen,Fiction,1813
+To Kill a Mockingbird,Harper Lee,Fiction,1960
+The Great Gatsby,F. Scott Fitzgerald,Fiction,1925
+Nineteen Eighty-Four,George Orwell,Fiction,1949
+Animal Farm,George Orwell,Fiction,1945
+The Catcher in the Rye,J. D. Salinger,Fiction,1951
+Jane Eyre,Charlotte Brontë,Fiction,1847
+Wuthering Heights,Emily Brontë,Fiction,1847
+Moby-Dick,Herman Melville,Fiction,1851
+War and Peace,Leo Tolstoy,Fiction,1869
+Anna Karenina,Leo Tolstoy,Fiction,1878
+Crime and Punishment,Fyodor Dostoevsky,Fiction,1866
+The Brothers Karamazov,Fyodor Dostoevsky,Fiction,1880
+One Hundred Years of Solitude,Gabriel García Márquez,Fiction,1967
+The Kite Runner,Khaled Hosseini,Fiction,2003
+The God of Small Things,Arundhati Roy,Fiction,1997
+Midnight's Children,Salman Rushdie,Fiction,1981
+The White Tiger,Aravind Adiga,Fiction,2008
+A Suitable Boy,Vikram Seth,Fiction,1993
+The Alchemist,Paulo Coelho,Fiction,1988
+Of Mice and Men,John Steinbeck,Fiction,1937
+The Grapes of Wrath,John Steinbeck,Fiction,1939
+Little Women,Louisa May Alcott,Fiction,1868
+Great Expectations,Charles Dickens,Fiction,1861
+A Tale of Two Cities,Charles Dickens,Fiction,1859
+Frankenstein,Mary Shelley,Fiction,1818
+The Book Thief,Markus Zusak,Fiction,2005
+Life of Pi,Yann Martel,Fiction,2001
+The Namesake,Jhumpa Lahiri,Fiction,2003
+Malgudi Days,R. K. Narayan,Fiction,1943
+Godan,Munshi Premchand,Fiction,1936
+The Home and the World,Rabindranath Tagore,Fiction,1916
+Things Fall Apart,Chinua Achebe,Fiction,1958
+The Old Man and the Sea,Ernest Hemingway,Fiction,1952
+Lord of the Flies,William Golding,Fiction,1954
+Beloved,Toni Morrison,Fiction,1987
+The Stranger,Albert Camus,Fiction,1942
+Siddhartha,Hermann Hesse,Fiction,1922
+Five Point Someone,Chetan Bhagat,Fiction,2004
+Dune,Frank Herbert,Science Fiction,1965
+Foundation,Isaac Asimov,Science Fiction,1951
+"I, Robot",Isaac Asimov,Science Fiction,1950
+Brave New World,Aldous Huxley,Science Fiction,1932
+Fahrenheit 451,Ray Bradbury,Science Fiction,1953
+The Handmaid's Tale,Margaret Atwood,Science Fiction,1985
+Neuromancer,William Gibson,Science Fiction,1984
+The Left Hand of Darkness,Ursula K. Le Guin,Science Fiction,1969
+Ender's Game,Orson Scott Card,Science Fiction,1985
+The Hitchhiker's Guide to the Galaxy,Douglas Adams,Science Fiction,1979
+Do Androids Dream of Electric Sheep?,Philip K. Dick,Science Fiction,1968
+The Martian,Andy Weir,Science Fiction,2011
+Project Hail Mary,Andy Weir,Science Fiction,2021
+The Three-Body Problem,Liu Cixin,Science Fiction,2008
+Hyperion,Dan Simmons,Science Fiction,1989
+The War of the Worlds,H. G. Wells,Science Fiction,1898
+The Time Machine,H. G. Wells,Science Fiction,1895
+Twenty Thousand Leagues Under the Seas,Jules Verne,Science Fiction,1870
+Snow Crash,Neal Stephenson,Science Fiction,1992
+Ready Player One,Ernest Cline,Science Fiction,2011
+The Hunger Games,Suzanne Collins,Science Fiction,2008
+Station Eleven,Emily St. John Mandel,Science Fiction,2014
+Klara and the Sun,Kazuo Ishiguro,Science Fiction,2021
+Never Let Me Go,Kazuo Ishiguro,Science Fiction,2005
+The Hobbit,J. R. R. Tolkien,Fantasy,1937
+The Fellowship of the Ring,J. R. R. Tolkien,Fantasy,1954
+The Two Towers,J. R. R. Tolkien,Fantasy,1954
+The Return of the King,J. R. R. Tolkien,Fantasy,1955
+Harry Potter and the Philosopher's Stone,J. K. Rowling,Fantasy,1997
+Harry Potter and the Chamber of Secrets,J. K. Rowling,Fantasy,1998
+Harry Potter and the Prisoner of Azkaban,J. K. Rowling,Fantasy,1999
+Harry Potter and the Goblet of Fire,J. K. Rowling,Fantasy,2000
+A Game of Thrones,George R. R. Martin,Fantasy,1996
+A Clash of Kings,George R. R. Martin,Fantasy,1998
+The Name of the Wind,Patrick Rothfuss,Fantasy,2007
+Mistborn: The Final Empire,Brandon Sanderson,Fantasy,2006
+The Way of Kings,Brandon Sanderson,Fantasy,2010
+"The Lion, the Witch and the Wardrobe",C. S. Lewis,Fantasy,1950
+A Wizard of Earthsea,Ursula K. Le Guin,Fantasy,1968
+American Gods,Neil Gaiman,Fantasy,2001
+Good Omens,Terry Pratchett and Neil Gaiman,Fantasy,1990
+The Colour of Magic,Terry Pratchett,Fantasy,1983
+The Immortals of Meluha,Amish Tripathi,Fantasy,2010
+Circe,Madeline Miller,Fantasy,2018
+The Song of Achilles,Madeline Miller,Fantasy,2011
+Alice's Adventures in Wonderland,Lewis Carroll,Fantasy,1865
+The Hound of the Baskervilles,Arthur Conan Doyle,Mystery & Thriller,1902
+A Study in Scarlet,Arthur Conan Doyle,Mystery & Thriller,1887
+The Adventures of Sherlock Holmes,Arthur Conan Doyle,Mystery & Thriller,1892
+Murder on the Orient Express,Agatha Christie,Mystery & Thriller,1934
+And Then There Were None,Agatha Christie,Mystery & Thriller,1939
+The Murder of Roger Ackroyd,Agatha Christie,Mystery & Thriller,1926
+Death on the Nile,Agatha Christie,Mystery & Thriller,1937
+The Girl with the Dragon Tattoo,Stieg Larsson,Mystery & Thriller,2005
+Gone Girl,Gillian Flynn,Mystery & Thriller,2012
+The Da Vinci Code,Dan Brown,Mystery & Thriller,2003
+Angels & Demons,Dan Brown,Mystery & Thriller,2000
+The Silence of the Lambs,Thomas Harris,Mystery & Thriller,1988
+Rebecca,Daphne du Maurier,Mystery & Thriller,1938
+The Big Sleep,Raymond Chandler,Mystery & Thriller,1939
+The Maltese Falcon,Dashiell Hammett,Mystery & Thriller,1930
+The Talented Mr. Ripley,Patricia Highsmith,Mystery & Thriller,1955
+The Name of the Rose,Umberto Eco,Mystery & Thriller,1980
+The Day of the Jackal,Frederick Forsyth,Mystery & Thriller,1971
+The Silent Patient,Alex Michaelides,Mystery & Thriller,2019
+The Girl on the Train,Paula Hawkins,Mystery & Thriller,2015
+The Moonstone,Wilkie Collins,Mystery & Thriller,1868
+Sense and Sensibility,Jane Austen,Romance,1811
+Emma,Jane Austen,Romance,1815
+Persuasion,Jane Austen,Romance,1817
+Outlander,Diana Gabaldon,Romance,1991
+The Notebook,Nicholas Sparks,Romance,1996
+Me Before You,Jojo Moyes,Romance,2012
+Normal People,Sally Rooney,Romance,2018
+The Fault in Our Stars,John Green,Romance,2012
+Gone with the Wind,Margaret Mitchell,Romance,1936
+Doctor Zhivago,Boris Pasternak,Romance,1957
+Love in the Time of Cholera,Gabriel García Márquez,Romance,1985
+The Time Traveler's Wife,Audrey Niffenegger,Romance,2003
+2 States,Chetan Bhagat,Romance,2009
+North and South,Elizabeth Gaskell,Romance,1855
+Atonement,Ian McEwan,Romance,2001
+The Rosie Project,Graeme Simsion,Romance,2013
+Call Me by Your Name,André Aciman,Romance,2007
+Sapiens: A Brief History of Humankind,Yuval Noah Harari,History,2011
+Homo Deus: A Brief History of Tomorrow,Yuval Noah Harari,History,2015
+"Guns, Germs, and Steel",Jared Diamond,History,1997
+The Discovery of India,Jawaharlal Nehru,History,1946
+Glimpses of World History,Jawaharlal Nehru,History,1934
+India After Gandhi,Ramachandra Guha,History,2007
+The Rise and Fall of the Third Reich,William L. Shirer,History,1960
+The Guns of August,Barbara W. Tuchman,History,1962
+SPQR: A History of Ancient Rome,Mary Beard,History,2015
+The Silk Roads,Peter Frankopan,History,2015
+Freedom at Midnight,Larry Collins and Dominique Lapierre,History,1975
+The Anarchy,William Dalrymple,History,2019
+The Last Mughal,William Dalrymple,History,2006
+An Era of Darkness,Shashi Tharoor,History,2016
+1776,David McCullough,History,2005
+Team of Rivals,Doris Kearns Goodwin,History,2005
+The Wright Brothers,David McCullough,History,2015
+A Brief History of Time,Stephen Hawking,Science,1988
+Brief Answers to the Big Questions,Stephen Hawking,Science,2018
+The Selfish Gene,Richard Dawkins,Science,1976
+Cosmos,Carl Sagan,Science,1980
+On the Origin of Species,Charles Darwin,Science,1859
+The Gene: An Intimate History,Siddhartha Mukherjee,Science,2016
+The Emperor of All Maladies,Siddhartha Mukherjee,Science,2010
+A Short History of Nearly Everything,Bill Bryson,Science,2003
+The Immortal Life of Henrietta Lacks,Rebecca Skloot,Science,2010
+Silent Spring,Rachel Carson,Science,1962
+The Elegant Universe,Brian Greene,Science,1999
+Astrophysics for People in a Hurry,Neil deGrasse Tyson,Science,2017
+The Double Helix,James D. Watson,Science,1968
+"Surely You're Joking, Mr. Feynman!",Richard P. Feynman,Science,1985
+The Sixth Extinction,Elizabeth Kolbert,Science,2014
+"Thinking, Fast and Slow",Daniel Kahneman,Science,2011
+The Structure of Scientific Revolutions,Thomas S. Kuhn,Science,1962
+Clean Code,Robert C. Martin,Computer Science,2008
+The Pragmatic Programmer,Andrew Hunt and David Thomas,Computer Science,1999
+Introduction to Algorithms,Thomas H. Cormen et al.,Computer Science,1990
+Design Patterns,Erich Gamma et al.,Computer Science,1994
+Structure and Interpretation of Computer Programs,Harold Abelson and Gerald Jay Sussman,Computer Science,1985
+The C Programming Language,Brian W. Kernighan and Dennis M. Ritchie,Computer Science,1978
+Code: The Hidden Language of Computer Hardware and Software,Charles Petzold,Computer Science,1999
+The Mythical Man-Month,Frederick P. Brooks Jr.,Computer Science,1975
+Refactoring,Martin Fowler,Computer Science,1999
+Computer Networks,Andrew S. Tanenbaum,Computer Science,1981
+"Compilers: Principles, Techniques, and Tools","Alfred V. Aho, Ravi Sethi and Jeffrey D. Ullman",Computer Science,1986
+The Art of Computer Programming,Donald E. Knuth,Computer Science,1968
+Designing Data-Intensive Applications,Martin Kleppmann,Computer Science,2017
+Deep Learning,"Ian Goodfellow, Yoshua Bengio and Aaron Courville",Computer Science,2016
+Cracking the Coding Interview,Gayle Laakmann McDowell,Computer Science,2008
+Head First Design Patterns,Eric Freeman and Elisabeth Robson,Computer Science,2004
+Python Crash Course,Eric Matthes,Computer Science,2015
+Fluent Python,Luciano Ramalho,Computer Science,2015
+Building Microservices,Sam Newman,Computer Science,2015
+The Phoenix Project,"Gene Kim, Kevin Behr and George Spafford",Computer Science,2013
+The Unicorn Project,Gene Kim,Computer Science,2019
+The DevOps Handbook,"Gene Kim, Jez Humble, Patrick Debois and John Willis",Computer Science,2016
+Continuous Delivery,Jez Humble and David Farley,Computer Science,2010
+Accelerate,"Nicole Forsgren, Jez Humble and Gene Kim",Computer Science,2018
+Site Reliability Engineering,Betsy Beyer et al.,Computer Science,2016
+Infrastructure as Code,Kief Morris,Computer Science,2016
+Terraform: Up & Running,Yevgeniy Brikman,Computer Science,2017
+Kubernetes: Up and Running,"Brendan Burns, Joe Beda and Kelsey Hightower",Computer Science,2017
+Docker in Action,Jeff Nickoloff,Computer Science,2016
+The Story of My Experiments with Truth,Mahatma Gandhi,Biography,1927
+Wings of Fire,A. P. J. Abdul Kalam,Biography,1999
+Long Walk to Freedom,Nelson Mandela,Biography,1994
+Steve Jobs,Walter Isaacson,Biography,2011
+Einstein: His Life and Universe,Walter Isaacson,Biography,2007
+Leonardo da Vinci,Walter Isaacson,Biography,2017
+Becoming,Michelle Obama,Biography,2018
+I Am Malala,Malala Yousafzai,Biography,2013
+The Autobiography of Malcolm X,Malcolm X and Alex Haley,Biography,1965
+Educated,Tara Westover,Biography,2018
+Born a Crime,Trevor Noah,Biography,2016
+When Breath Becomes Air,Paul Kalanithi,Biography,2016
+Shoe Dog,Phil Knight,Biography,2016
+An Autobiography,Jawaharlal Nehru,Biography,1936
+Playing It My Way,Sachin Tendulkar,Biography,2014
+The Diary of a Young Girl,Anne Frank,Biography,1947
+Alexander Hamilton,Ron Chernow,Biography,2004
+Atomic Habits,James Clear,Self-Help,2018
+The 7 Habits of Highly Effective People,Stephen R. Covey,Self-Help,1989
+How to Win Friends and Influence People,Dale Carnegie,Self-Help,1936
+Think and Grow Rich,Napoleon Hill,Self-Help,1937
+The Power of Habit,Charles Duhigg,Self-Help,2012
+Deep Work,Cal Newport,Self-Help,2016
+Man's Search for Meaning,Viktor E. Frankl,Self-Help,1946
+Mindset,Carol S. Dweck,Self-Help,2006
+Ikigai,Héctor García and Francesc Miralles,Self-Help,2016
+The Power of Now,Eckhart Tolle,Self-Help,1997
+Grit,Angela Duckworth,Self-Help,2016
+The 5 AM Club,Robin Sharma,Self-Help,2018
+The Monk Who Sold His Ferrari,Robin Sharma,Self-Help,1997
+Quiet,Susan Cain,Self-Help,2012
+Can't Hurt Me,David Goggins,Self-Help,2018
+Essentialism,Greg McKeown,Self-Help,2014
+Meditations,Marcus Aurelius,Philosophy,
+The Republic,Plato,Philosophy,
+The Bhagavad Gita,Vyasa,Philosophy,
+Tao Te Ching,Laozi,Philosophy,
+The Art of War,Sun Tzu,Philosophy,
+Letters from a Stoic,Seneca,Philosophy,
+Thus Spoke Zarathustra,Friedrich Nietzsche,Philosophy,1883
+Beyond Good and Evil,Friedrich Nietzsche,Philosophy,1886
+The Myth of Sisyphus,Albert Camus,Philosophy,1942
+Being and Time,Martin Heidegger,Philosophy,1927
+Critique of Pure Reason,Immanuel Kant,Philosophy,1781
+The Prince,Niccolò Machiavelli,Philosophy,1532
+Leviathan,Thomas Hobbes,Philosophy,1651
+Sophie's World,Jostein Gaarder,Philosophy,1991
+The Social Contract,Jean-Jacques Rousseau,Philosophy,1762
+On Liberty,John Stuart Mill,Philosophy,1859
+Utilitarianism,John Stuart Mill,Philosophy,1863
+The Second Sex,Simone de Beauvoir,Philosophy,1949
+Discourse on the Method,René Descartes,Philosophy,1637
+Zero to One,Peter Thiel and Blake Masters,Business,2014
+The Lean Startup,Eric Ries,Business,2011
+Good to Great,Jim Collins,Business,2001
+Built to Last,Jim Collins and Jerry I. Porras,Business,1994
+The Innovator's Dilemma,Clayton M. Christensen,Business,1997
+Rich Dad Poor Dad,Robert T. Kiyosaki,Business,1997
+The Psychology of Money,Morgan Housel,Business,2020
+The Intelligent Investor,Benjamin Graham,Business,1949
+Freakonomics,Steven D. Levitt and Stephen J. Dubner,Business,2005
+The Hard Thing About Hard Things,Ben Horowitz,Business,2014
+Start with Why,Simon Sinek,Business,2009
+Blue Ocean Strategy,W. Chan Kim and Renée Mauborgne,Business,2005
+The Black Swan,Nassim Nicholas Taleb,Business,2007
+Measure What Matters,John Doerr,Business,2018
+Hooked,Nir Eyal,Business,2014
+Influence,Robert B. Cialdini,Business,1984
+The 4-Hour Workweek,Timothy Ferriss,Business,2007
+Stay Hungry Stay Foolish,Rashmi Bansal,Business,2008

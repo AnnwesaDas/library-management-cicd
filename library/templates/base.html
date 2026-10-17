@@ -7,19 +7,27 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <header>
-    <strong>Library Management</strong>
-    <nav>
-      <a href="{{ url_for('main.index') }}">Home</a>
-      <a href="{{ url_for('main.books') }}">Books</a>
-      <a href="{{ url_for('main.members') }}">Members</a>
-    </nav>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="{{ url_for('main.index') }}">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <span>Library</span>
+      </a>
+      <nav>
+        {% for endpoint, label in [('main.index', 'Dashboard'), ('main.books', 'Books'), ('main.members', 'Members')] %}
+          <a href="{{ url_for(endpoint) }}" {% if request.endpoint == endpoint %}aria-current="page"{% endif %}>{{ label }}</a>
+        {% endfor %}
+      </nav>
+    </div>
   </header>
+
   <main>
     {% for category, message in get_flashed_messages(with_categories=true) %}
-      <p class="flash {{ category }}">{{ message }}</p>
+      <p class="flash {{ category }}" role="status">{{ message }}</p>
     {% endfor %}
     {% block content %}{% endblock %}
   </main>
+
+  <footer>Library Management System · version {{ app_version }}</footer>
 </body>
 </html>

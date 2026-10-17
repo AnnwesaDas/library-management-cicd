@@ -15,6 +15,10 @@ COPY library ./library
 RUN useradd --create-home appuser && mkdir instance && chown appuser instance
 USER appuser
 
+# The pipeline passes the commit SHA so the page footer and /health show which version is running.
+ARG APP_VERSION=dev
+ENV APP_VERSION=$APP_VERSION
+
 EXPOSE 8000
 
 HEALTHCHECK --interval=10s --timeout=5s --start-period=10s --retries=3 \
